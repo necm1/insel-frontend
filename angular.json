@@ -7,15 +7,19 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "skipTests": true
         },
         "@schematics/angular:application": {
           "strict": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
         }
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "insel",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
