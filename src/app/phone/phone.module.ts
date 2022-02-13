@@ -1,8 +1,9 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
+import {PhoneComponent} from './component/phone.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [PhoneComponent],
   imports: [CommonModule],
 })
 /**
