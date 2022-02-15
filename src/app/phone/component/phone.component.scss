@@ -1,0 +1,56 @@
+@use '~src/styles/variables' as var;
+
+:host {
+  height: var.$phone-y;
+  width: var.$phone-x;
+  background-image: url('../../../assets/images/phone/frame.png');
+  background-color: transparent;
+  background-size: 98%;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: var.$phone-bottom;
+  left: calc(100vw - 20rem);
+  border-radius: var.$phone-radius;
+  display: flex;
+  flex-direction: column;
+  font-family: 'SF Pro Display', sans-serif;
+
+  .phone-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    > .phone-background {
+      z-index: -1;
+      height: 98%;
+      width: 89%;
+      top: 0.45rem;
+      left: 0.85rem;
+      position: absolute;
+      border-radius: 25px;
+      background-repeat: no-repeat;
+
+      &.bg-1 {
+        background-image: url('../../../assets/images/phone/bg-1.jpg');
+        background-size: cover;
+      }
+
+      &.bg-2 {
+        background-image: url('../../../assets/images/phone/bg-2.jpg');
+        background-size: 98%;
+      }
+    }
+
+    > .phone-container {
+      padding: var.$phone-padding;
+
+      > #phone-header {
+        font-size: 12px;
+        color: #fff;
+        font-weight: 500;
+        padding-left: 1.05rem;
+        padding-top: 0.7rem;
+      }
+    }
+  }
+}
