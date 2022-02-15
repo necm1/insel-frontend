@@ -1,0 +1,50 @@
+.app-container {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: 48px;
+
+  > .app-name {
+    position: absolute;
+    bottom: -1.25rem;
+    font-family: 'SF Pro Display', sans-serif;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .app {
+    height: 48px;
+    width: 48px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    image-rendering: -webkit-optimize-contrast;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &.app-settings {
+      background-image: url('../../../../assets/images/phone/apps/settings.png');
+    }
+
+    &.app-camera {
+      background-image: url('../../../../assets/images/phone/apps/camera.png');
+    }
+
+    &.app-bank {
+      background-image: url('../../../../assets/images/phone/apps/banksign.png');
+    }
+
+    &.app-calculator {
+      background-image: url('../../../../assets/images/phone/apps/calculator.png');
+    }
+  }
+}
+
+.row {
+  margin-right: 15px;
+  margin-left: 0px;
+}
