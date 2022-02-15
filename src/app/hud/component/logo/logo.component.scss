@@ -1,0 +1,21 @@
+:host {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+  text-shadow: 0px 2px 5px rgb(0 0 0 / 55%);
+
+  > img {
+    height: 4.5rem;
+    width: 4.5rem;
+    box-shadow: 0px 5px 5px rgb(0 0 0 / 45%);
+    border-radius: 50rem;
+  }
+
+  span {
+    font-size: 1.15rem;
+  }
+}
