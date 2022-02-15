@@ -1,0 +1,33 @@
+@use '~/src/styles/variables' as var;
+
+:host {
+  display: flex;
+  position: fixed;
+  bottom: 4vh;
+  left: 6vh;
+  flex-direction: column;
+
+  > #map-highlight {
+    width: var.$map-highlight-height;
+    height: var.$map-highlight-width;
+    border: var.$map-highlight-border;
+    border-radius: var.$map-highlight-radius;
+  }
+
+  > #map-job {
+    position: absolute;
+    bottom: -2.1rem;
+    left: 0;
+    right: 0;
+    background-color: var.$map-job-background;
+    border-radius: var.$map-job-radius;
+    color: var.$map-job-color;
+    text-transform: var.$map-job-text-transform;
+    font-weight: var.$map-job-text-weight;
+
+    #map-job-icon {
+      position: absolute;
+      left: 0.65rem;
+    }
+  }
+}

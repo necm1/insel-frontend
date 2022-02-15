@@ -5,6 +5,22 @@ $phone-x: 17rem;
 $phone-y: 33.25rem;
 $phone-radius: 14px;
 $phone-shadow: 0 19px 38px rgba(0 0 0 / 31%), 0 15px 12px rgba(0 0 0 / 22%);
-$phone-bottom: 0.5rem;
+$phone-bottom: 1.25rem;
 $phone-padding: 0.5rem 1.4rem 0.75rem 1rem;
 $phone-z-index: 20;
+
+// Map
+$map-highlight-border: 4px solid #000000;
+$map-highlight-radius: 50%;
+$map-highlight-height: 26.85vh;
+$map-highlight-width: 26.85vh;
+
+$map-job-background: rgba(0 0 0 / 50%);
+$map-job-radius: 0.5rem;
+$map-job-color: #fff;
+$map-job-text-transform: uppercase;
+$map-job-text-weight: 500;
+
+// Stats
+$stats-bottom: 6vh;
+$stats-left: 4vh;

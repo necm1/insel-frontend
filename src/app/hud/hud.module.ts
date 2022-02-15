@@ -1,11 +1,13 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {LogoComponent} from './component/logo/logo.component';
+import {MapComponent} from './component/map/map.component';
+import {HUDComponent} from './component/hud.component';
 
 @NgModule({
-  declarations: [LogoComponent],
+  declarations: [LogoComponent, MapComponent, HUDComponent],
   imports: [CommonModule],
-  exports: [LogoComponent],
+  exports: [HUDComponent],
 })
 /**
  * @class HUDModule
