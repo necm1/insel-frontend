@@ -1,0 +1,55 @@
+@use '~src/styles/variables' as var;
+
+:host {
+  position: fixed;
+  bottom: var.$stats-bottom;
+  left: var.$stats-left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 20vh;
+  color: #fff;
+
+  ::ng-deep {
+    .progress-bar {
+      background: var.$stats-progress-bar-background;
+    }
+
+    .progress {
+      background-color: var.$stats-progress-background;
+      height: 0.65rem;
+    }
+  }
+
+  > div {
+    width: 20vh;
+
+    &:not(:last-child) {
+      margin-bottom: 0.65rem;
+    }
+
+    &:nth-child(1) {
+      > i {
+        margin-right: 0.65rem;
+      }
+    }
+
+    &:nth-child(2) {
+      > i {
+        margin-right: 0.7rem;
+      }
+    }
+
+    &:nth-child(3) {
+      > i {
+        margin-right: 0.6rem;
+      }
+    }
+
+    &:nth-child(4) {
+      > i {
+        margin-right: 0.41rem;
+      }
+    }
+  }
+}

@@ -22,5 +22,12 @@ $map-job-text-transform: uppercase;
 $map-job-text-weight: 500;
 
 // Stats
-$stats-bottom: 6vh;
-$stats-left: 4vh;
+$stats-bottom: 0.5vh;
+$stats-left: 35vh;
+$stats-progress-bar-background: linear-gradient(
+  90deg,
+  #ec6508 0%,
+  #ef7b00 35%,
+  #f7a800 100%
+);
+$stats-progress-background: rgb(102 102 102 / 50%);
