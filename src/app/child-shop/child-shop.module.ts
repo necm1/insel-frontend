@@ -1,8 +1,9 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
+import {ChildShopComponent} from './component/child-shop.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [ChildShopComponent],
   imports: [CommonModule],
 })
 /**
